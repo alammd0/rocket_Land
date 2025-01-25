@@ -1,9 +1,68 @@
-import React from 'react'
+/** @format */
+
+import React from "react";
+import { Link } from "react-router-dom";
+import ContactFrom from "../components/Main/ContactFrom";
+import MapSection from "../components/core/MapSection";
+import Footer from "../components/common/Footer";
 
 const Contact = () => {
-  return (
-    <div>Contact</div>
-  )
-}
+	return (
+		<div>
+			{/* Section : 01 */}
+			<section>
+				<div className="mx-auto bg-amber-50 py-[100px] flex flex-col gap-30">
+					<div className="w-11/14 mx-auto flex justify-between items-start gap-20">
+						<div className="w-[50%] flex flex-col gap-6">
+							<div className="text-2xl  text-[#87909E]">
+								Sprocket Rocket lets you transform your rapid prototype into a
+								beautiful design by adjusting every aspect of the design to fit
+								brand standards.
+							</div>
 
-export default Contact
+							<div className="flex flex-col gap-6">
+								<div className="flex flex-col gap-2">
+									<h2 className="text-[#87909E] text-2xl font-bold">ADDRESS:</h2>
+									<p className="text-[#87909E] text-2xl">11184 Antioch Rd, Ste 524</p>
+									<p className="text-[#87909E] text-2xl">Overland Park, Kansas, 66210</p>
+								</div>
+
+								<div className="flex flex-col gap-2">
+									<h2 className="text-[#87909E] text-2xl font-bold">PHONE:</h2>
+									<Link to={"/"} className="text-blue-600 text-2xl hover:underline" >777-456-9810</Link>
+								</div>
+
+								<div className="flex flex-col gap-2">
+									<h2 className="text-[#87909E] text-2xl font-bold">EMAIL:</h2>
+									<Link className="text-blue-600 text-2xl hover:underline" to={"mailto:OY3X9@example.com"}>
+										team@sprocketrocket.com
+									</Link>
+								</div>
+							</div>
+						</div>
+
+						<div className="w-[50%] px-4 py-5 flex flex-col gap-8 justify-center">
+							<div className="flex flex-col gap-1">
+								<p className=" text-black text-xl font-bold">Contact Us</p>
+								<h2 className="text-5xl font-bold text-[#30343B]">We’d Love To Hear From You!</h2>
+							</div>
+
+							<ContactFrom />
+						</div>
+					</div>
+
+          <div>
+            <MapSection/>
+          </div>
+				</div>
+			</section>
+
+      {/* Section : 02 */}
+      <section>
+        <Footer />
+      </section>
+		</div>
+	);
+};
+
+export default Contact;
