@@ -2,9 +2,11 @@
 
 import React from "react";
 import ContactFrom from "../components/Main/ContactFrom";
+
 import left from "../assets/left.webp";
 import TestemoNialCard from "../components/Main/TestemoNialCard";
 import CompanyLog from "../components/common/CompanyLog";
+
 
 
 const Main = () => {
@@ -65,7 +67,7 @@ const Main = () => {
 					</div>
 
 					<div>
-						<TestemoNialCard  />
+						<TestemoNialCard />
 					</div>
 				</div>
 			</div>

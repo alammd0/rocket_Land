@@ -4,6 +4,8 @@ import React from "react";
 import Logo from "../../assets/Logo.svg";
 import { Link } from "react-router-dom";
 import GetButton from "../core/GetButton";
+import IconDetails from "./IconDetails";
+
 
 const NavBar = () => {
 	return (
