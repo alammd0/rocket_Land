@@ -8,7 +8,7 @@ import heroImage1 from "../assets/Hero_img1.webp";
 import heroImage2 from "../assets/Hero_img2.webp";
 import FreeBlock from "../components/Home/FreeBlock";
 import GetButton from "../components/core/GetButton";
-import leftdemo from "../assets/leftdemo.webp";
+import leftdemo from "../assets/leftdemo.webp"
 import DemoSection from "../components/Home/DemoSection ";
 import TestemoNialCard from "../components/Main/TestemoNialCard";
 import Footer from "../components/common/Footer";
