@@ -8,11 +8,11 @@ const FreeBlock = ({ position, heroImage, title1, title2, desc, text }) => {
 		<div
 			className={`flex ${
 				position ? position : ""
-			} gap-10 justify-center items-center`}>
-			<div className="w-[50%]">
-				<img className=" rounded-lg shadow-xl shadow-blue-100" src={heroImage} alt="Not" />
+			} gap-10 lg:justify-center lg:items-center lg:ml-0 ml-4`}>
+			<div className="lg:w-[50%]">
+				<img className="rounded-lg shadow-xl shadow-blue-100" src={heroImage} alt="Not" />
 			</div>
-			<div className="w-[50%] flex flex-col gap-6">
+			<div className="lg:w-[50%] flex flex-col items-start gap-6">
 				<p className="text-2xl font-bold text-blue-600">{title1}</p>
 				<div className="flex flex-col gap-4">
 					<h2 className="text-4xl font-bold">{title2}</h2>

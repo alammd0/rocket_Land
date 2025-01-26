@@ -4,7 +4,7 @@ import React from "react";
 
 const MapSection = () => {
 	return (
-		<div className="w-11/14 mx-auto flex flex-col rounded-lg justify-between gap-10 items-center md:flex-row bg-white shadow">
+		<div className="lg:w-11/14 sm:w-11/12 sm:mx-auto flex flex-col rounded-lg justify-between gap-10 items-center md:flex-row bg-white shadow">
 			{/* Map Section */}
 			<div className="w-full md:w-2/3">
 				<iframe
@@ -15,7 +15,7 @@ const MapSection = () => {
 			</div>
 
 			{/* Contact Info Section */}
-			<div className="w-full md:w-1/3 flex flex-col gap-4">
+			<div className="w-full lg:ml-0 ml-6 flex flex-col gap-4">
 				<h2 className="text-xl font-bold">Contact Us</h2>
 				<a
 					href="https://www.google.com/maps"
@@ -23,7 +23,7 @@ const MapSection = () => {
 					>
 					View Google Maps
 				</a>
-				<ul className="text-gray-700 flex flex-col gap-1">
+				<ul className="text-gray-700  flex flex-col gap-1">
 					<li>Monday 10am–6pm</li>
 					<li>Tuesday 10am–6pm</li>
 					<li>Wednesday 10am–6pm</li>

@@ -12,9 +12,10 @@ const Contact = () => {
 			{/* Section : 01 */}
 			<section>
 				<div className="mx-auto bg-amber-50 py-[100px] flex flex-col gap-30">
-					<div className="w-11/14 mx-auto flex justify-between items-start gap-20">
-						<div className="w-[50%] flex flex-col gap-6">
-							<div className="text-2xl  text-[#87909E]">
+
+					<div className="lg:w-11/14 sm:w-11/12 mx-auto flex lg:flex-row flex-col justify-between items-start lg:gap-20 gap-10">
+						<div className="lg:w-[50%] w-[90%] lg:ml-0 ml-6 flex flex-col gap-6">
+							<div className="text-2xl   text-[#87909E]">
 								Sprocket Rocket lets you transform your rapid prototype into a
 								beautiful design by adjusting every aspect of the design to fit
 								brand standards.
@@ -41,7 +42,7 @@ const Contact = () => {
 							</div>
 						</div>
 
-						<div className="w-[50%] px-4 py-5 flex flex-col gap-8 justify-center">
+						<div className="lg:w-[50%] lg:ml-0 ml-6 px-4 py-5 flex flex-col gap-8 justify-center">
 							<div className="flex flex-col gap-1">
 								<p className=" text-black text-xl font-bold">Contact Us</p>
 								<h2 className="text-5xl font-bold text-[#30343B]">We’d Love To Hear From You!</h2>
@@ -49,18 +50,20 @@ const Contact = () => {
 
 							<ContactFrom />
 						</div>
+
 					</div>
 
-          <div>
-            <MapSection/>
-          </div>
+					<div>
+						<MapSection/>
+					</div>
+
 				</div>
 			</section>
 
-      {/* Section : 02 */}
-      <section>
-        <Footer />
-      </section>
+			{/* Section : 02 */}
+			<section>
+				<Footer />
+			</section>
 		</div>
 	);
 };

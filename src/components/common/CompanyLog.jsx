@@ -9,7 +9,7 @@ import logo5 from "../../assets/logo-alphabet-04.webp";
 
 const CompanyLog = () => {
 	return (
-		<div className="flex flex-row gap-8 items-center justify-center">
+		<div className="flex lg:flex-row  flex-wrap gap-8 items-center justify-center">
 			<img className="h-[40px]" src={logo1} />
 			<img className="h-[40px]" src={logo2} />
 			<img className="h-[40px]" src={logo3} />

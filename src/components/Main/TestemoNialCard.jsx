@@ -21,10 +21,10 @@ const testimonials = [
 
 const TestemoNialCard = () => {
 	return (
-		<div className="flex flex-row gap-20 justify-center items-center p-[15px]">
+		<div className="flex lg:flex-row flex-col lg:gap-20 gap-10 justify-center items-center p-[15px]">
 			{testimonials.map((data, index) => (
 				<div
-					className="w-[30%] bg-[#FFFFFF] flex flex-col gap-20 p-[30px] shadow-xl shadow-blue-300 border border-blue-600 rounded-lg"
+					className="lg:w-[30%] bg-[#FFFFFF] flex flex-col lg:gap-20 gap-10 p-[30px] shadow-xl shadow-blue-300 border border-blue-600 rounded-lg"
 					key={index}>
 					<p className="text-[20px] font-light">
 						<span>&ldquo;</span>

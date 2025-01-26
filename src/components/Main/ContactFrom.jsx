@@ -20,7 +20,7 @@ const ContactFrom = () => {
 		<div>
 			<form className="flex flex-col gap-6" onSubmit={handleSubmit(clickHandle)}>
 				{/* name Section */}
-				<div className="flex flex-row gap-5 w-full">
+				<div className="flex flex-row gap-5 w-[100%]">
 					{/* First Name */}
 					<div className="flex flex-col w-full gap-2">
 						<label className="text-[16px] font-semibold text-stone-500" htmlFor="fName">First Name : <sup className="text-red-500">*</sup></label>

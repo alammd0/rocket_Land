@@ -10,14 +10,16 @@ import IconDetails from "./IconDetails";
 
 const Footer = () => {
 	return (
-		<div className="bg-cyan-50 pt-[60px] pb-[40px]">
-			<div className="w-11/14 mx-auto flex flex-col gap-8">
+		<div className="pt-[60px] lg:ml-0 ml-6 pb-[40px]">
+			<div className="lg:w-11/14 sm:w-11/12 mx-auto flex flex-col gap-8">
+
 				<div>
 					<Link to="/">
 						<img src={logo} alt="Not" />
 					</Link>
 				</div>
-				<div className=" flex flex-row gap-10">
+
+				<div className="flex flex-row flex-wrap gap-5">
 					{menuData.map((data, index) => {
 						return (
 							<div className="text-[18px] font-semibold text-[#87909E]" key={index}>
@@ -26,8 +28,9 @@ const Footer = () => {
 						);
 					})}
 				</div>
-				<div className="flex flex-row justify-between items-center">
-					<div className="text-[18px] font-semibold text-[#87909E]">
+
+				<div className="flex lg:flex-row flex-col-reverse gap-8 justify-between lg:items-center">
+					<div className="text-[18px] text-center font-semibold text-[#87909E]">
 						@2025 All Rights Reserved by <Link to="/">Alam</Link>
 					</div>
 					<div className="flex flex-row gap-10">
@@ -38,6 +41,7 @@ const Footer = () => {
 						))}
 					</div>
 				</div>
+
 			</div>
 		</div>
 	);

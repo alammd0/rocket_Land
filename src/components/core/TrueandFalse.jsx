@@ -8,13 +8,12 @@ const TrueandFalse = ({ active, text }) => {
 	return (
 		<Link
 			className={`${
-				active ? "bg-[#0C63FF] text-white" : "bg-white text-[#0C63FF]"
-			} px-4 py-3 text-[16px] font-semibold rounded-md shadow shadow-cyan-400 cursor-pointer transition-all duration-200`}
+				active
+					? "bg-[#0C63FF] text-white hover:text-[#9fb6e1]"
+					: "bg-white text-[#0C63FF] hover:text-[#9fb6e1]"
+			} px-4 py-3 text-[16px] flex items-center gap-2 font-semibold rounded-md shadow shadow-cyan-400 cursor-pointer transition-all duration-200`}
 			to="/">
-			{text}{" "}
-			<span>
-				<GrFormNextLink />
-			</span>
+			{text} <GrFormNextLink />
 		</Link>
 	);
 };

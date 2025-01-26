@@ -19,12 +19,14 @@ const Home = () => {
 		<div>
 			{/* section : 01 */}
 			<section className="bg-[#1075FF] pt-[65px] pb-[65px]">
-				<div className="w-11/14 mx-auto flex flex-row justify-between items-center">
+				<div className="lg:w-11/14 sm:w-11/12 mx-auto flex lg:flex-row flex-col gap-20 justify-between items-center">
 					{/* left side */}
-					<div className="flex flex-col gap-6 justify-between w-[50%]">
+					<div className="flex flex-col gap-6 lg:ml-0 ml-6 justify-between lg:w-[50%]">
+
 						<h2 className="text-4xl font-semibold w-[70%] text-white">
 							Put Your Best Page Forward
 						</h2>
+
 						<p className="text-[24px] text-[#f4ededb8]">
 							Sprocket Rocket lets you transform your rapid prototype into a
 							beautiful design by adjusting every aspect of the design to fit
@@ -60,11 +62,14 @@ const Home = () => {
 								</Link>
 							</button>
 						</div>
+
 					</div>
+
 					{/* right side */}
-					<div className="w-[50%] flex justify-center items-center">
+					<div className="lg:w-[50%] flex justify-center items-center">
 						<img src={macImage} alt="Not Availabe" />
 					</div>
+
 				</div>
 			</section>
 
@@ -72,14 +77,15 @@ const Home = () => {
 
 			{/* Section : 02 */}
 			<section>
-				<div className="w-11/14 mx-auto px-4 py-[50px] flex flex-col gap-30">
+				<div className="lg:w-11/14 sm:w-11/12 mx-auto px-4 py-[50px] flex flex-col gap-30">
 					<CompanyLog />
 
-					<div>
+					<div className="flex flex-col gap-10">
+
 						{/* top Section */}
 						<div>
 							<FreeBlock
-								position="flex-row"
+								position="lg:flex-row flex-col"
 								heroImage={heroImage1}
 								title1="Sprocket Rocket Free"
 								title2="Stunning HubSpot websites, effortlessly"
@@ -87,9 +93,10 @@ const Home = () => {
 								text="Start Bulding- it's Free"
 							/>
 						</div>
+
 						<div>
 							<FreeBlock
-								position="flex-row-reverse"
+								position="lg:flex-row-reverse flex-col"
 								heroImage={heroImage2}
 								title2="Complete design control"
 								desc="Powerful theme settings help maintain brand
@@ -97,6 +104,7 @@ consistency across the entire website, enabling you to customize even the smalle
 								text="Start Bulding"
 							/>
 						</div>
+
 					</div>
 				</div>
 			</section>
@@ -113,7 +121,7 @@ consistency across the entire website, enabling you to customize even the smalle
 
 			{/* Section: 04 */}
 			<section className="px-4 py-[50px] bg-amber-50">
-				<div className="w-11/14 mx-auto flex flex-col gap-18 justify-center items-center">
+				<div className="lg:w-11/14 sm:w-11/12 mx-auto flex flex-col gap-18 justify-center items-center">
 					<div className="flex flex-col gap-4 text-center items-center justify-center">
 						<h2 className="text-4xl flex items-start text-left font-semibold text-gray-800">
 							Built for Everyone
