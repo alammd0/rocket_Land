@@ -8,7 +8,7 @@ import heroImage1 from "../assets/Hero_img1.webp";
 import heroImage2 from "../assets/Hero_img2.webp";
 import FreeBlock from "../components/Home/FreeBlock";
 import GetButton from "../components/core/GetButton";
-import leftDemo from "../assets/leftDemo.webp";
+import leftdemo from "../assets/leftDemo.webp";
 import DemoSection from "../components/Home/DemoSection ";
 import TestemoNialCard from "../components/Main/TestemoNialCard";
 import Footer from "../components/common/Footer";
@@ -112,7 +112,7 @@ consistency across the entire website, enabling you to customize even the smalle
 			{/* Section : 03 */}
 			<section className="bg-[#060F1E]">
 				<DemoSection
-					image={leftDemo}
+					image={leftdemo}
 					title="Modular Themes for HubSpotters"
 					desc="Use pre-built modules to create high-performing, user-friendly pages"
 					text="Watch video"
